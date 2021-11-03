@@ -1,4 +1,6 @@
-// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/3/21, v0.1
+import java.util.Scanner;
+
+// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/3/21, v0.2
 
 public class Student {
     // THESE ARE INSTANCE VARIABLES
@@ -26,9 +28,15 @@ public class Student {
 
     }
 
-    public Student()
+    public Student(int studentID, String studentame) {
+        this.studentID = studentID;
+        this.studentName = studentName;
+        this.gradeLevel = 10;
+        this.gradePointAverage = 3.8;
+
+    }
 
     public static void main(String[] args){
         Student student0 = new Student();
-        Student student1 = new Student(11025564/ 12, 0.34, "Kali Stevens");
+        Student student1 = new Student(11025564, 12, 0.34, "Kali Stevens");
     }
