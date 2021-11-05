@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/5/21, v0.5
+// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/5/21, v0.6
 
 public class Student {
     // THESE ARE INSTANCE VARIABLES
@@ -68,28 +68,26 @@ public class Student {
     }
 
     // Parameters and Arguments
-    public static void assignLunch(int gradeLevel){
+    public static void assignLunch(int gradeLevel) {
         String lunchPeriod;
 
-        if (gradeLevel == 9){
+        if (gradeLevel == 9) {
             lunchPeriod = "First Lunch";
             System.out.print("This student has ");
             System.out.println(lunchPeriod);
-        } else if (gradeLevel == 10){
+        } else if (gradeLevel == 10) {
             lunchPeriod = "Second Lunch";
             System.out.print("This student has ");
             System.out.println(lunchPeriod);
-        } else if (gradeLevel == 11){
+        } else if (gradeLevel == 11) {
             lunchPeriod = "Third Lunch";
             System.out.print("This student has ");
             System.out.println(lunchPeriod);
-        } else (gradeLevel == 12){
+        } else {
             lunchPeriod = "Off-Campus Lunch";
             System.out.print("This student has ");
             System.out.println(lunchPeriod);
         }
-
-
 
     }
 
