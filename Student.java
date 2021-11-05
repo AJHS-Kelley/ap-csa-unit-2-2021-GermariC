@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/5/21, v0.4
+// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/5/21, v0.5
 
 public class Student {
     // THESE ARE INSTANCE VARIABLES
@@ -61,6 +61,12 @@ public class Student {
         System.out.println(newGPA);
     }
 
+    public static void newLine() {
+        newLine();
+        newLine();
+        newLine();
+    }
+
     // Parameters and Arguments
     public static void assignLunch(int gradeLevel){
         String lunchPeriod;
@@ -92,7 +98,8 @@ public class Student {
          * Student student0 = new Student(); Student student1 = new Student(11025564,
          * 12, 0.34, "Kali Stevens");
          * 
-         * System.out.print
+         * System.out.println("Well Hello there!"); threeLine();
+         * System.out.println("General Kenobi."); calcGPA();
          */
 
         assignLunch(9);
