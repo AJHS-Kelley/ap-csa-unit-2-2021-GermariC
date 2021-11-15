@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/5/21, v0.6
+// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/15/21, v0.7
 
 public class Student {
     // THESE ARE INSTANCE VARIABLES
@@ -89,6 +89,31 @@ public class Student {
             System.out.println(lunchPeriod);
         }
 
+    public static void assignLunchMultiple(int gradeLevel, double gradePointAverage) {
+        String lunchPeriod;
+        // AND, OR, NOT -- Boolean Operators
+        // && -- AND
+        // || -- or
+        // | -- NOT
+
+        if (gradeLevel == 9 || gradePointAverage <= 1.5) {
+            lunchPeriod = "First Lunch";
+            System.out.print("This student has ");
+            System.out.println(lunchPeriod);
+        } else if (gradeLevel == 10 && gradePointAverage > 2.0) {
+            lunchPeriod = "Second Lunch";
+            System.out.print("This student has ");
+            System.out.println(lunchPeriod);
+        } else if (gradeLevel == 11 | gradePointAverage != 0.0) {
+            lunchPeriod = "Third Lunch";
+            System.out.print("This student has ");
+            System.out.println(lunchPeriod);
+        } else {
+            lunchPeriod = "Off-Campus Lunch";
+            System.out.print("This student has ");
+            System.out.println(lunchPeriod);
+        }
+
     }
 
     public static void main(String[] args) {
@@ -100,6 +125,6 @@ public class Student {
          * System.out.println("General Kenobi."); calcGPA();
          */
 
-        assignLunch(9);
+        assignLunch(11);
     }
 }
