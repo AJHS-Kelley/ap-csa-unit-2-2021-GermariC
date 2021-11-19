@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/15/21, v0.7
+// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/19/21, v0.8
 
 public class Student {
     // THESE ARE INSTANCE VARIABLES
@@ -116,6 +116,10 @@ public class Student {
 
     }
 
+    public static void mathPractice() {
+
+    }
+
     public static void main(String[] args) {
         /*
          * Student student0 = new Student(); Student student1 = new Student(11025564,
@@ -125,6 +129,7 @@ public class Student {
          * System.out.println("General Kenobi."); calcGPA();
          */
 
-        assignLunch(11);
+        assignLunchMultiple(10, 1.45);
+        assignLunchMultiple(11, 2.5);
     }
 }
