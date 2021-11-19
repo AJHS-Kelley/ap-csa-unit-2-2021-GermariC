@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/19/21, v0.8
+// Unit 2, Topic 1, Classes and Objects, Germari Cull, 11/19/21, v0.9
 
 public class Student {
     // THESE ARE INSTANCE VARIABLES
@@ -88,6 +88,7 @@ public class Student {
             System.out.print("This student has ");
             System.out.println(lunchPeriod);
         }
+    }
 
     public static void assignLunchMultiple(int gradeLevel, double gradePointAverage) {
         String lunchPeriod;
@@ -117,19 +118,44 @@ public class Student {
     }
 
     public static void mathPractice() {
+        int x;
+        int y;
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println("Please enter two integers and press enter.\n");
+        x = myScanner.nextInt();
+        y = myScanner.nextInt();
+        System.out.println(Math.min(x, y));
+
+        int lowest;
+        lowest = Math.min(x, y);
+        System.out.println(lowest);
+
+        System.out.println("Next we will use Math.pow() to calculate.\n");
+        System.out.println(Math.pow(x, y));
+
+        double exponents;
+        exponents = Math.pow(x, y);
+        System.out.println(exponents);
+
+        System.out.println("Next we will use Math.random().\n");
+        System.out.println(Math.random());
+
+        double percentage;
+        percentage = (Math.random() * 100);
+        System.out.print("There is a ");
+        System.out.print(percentage);
+        System.out.println("% chance of rain today.\n");
 
     }
 
     public static void main(String[] args) {
         /*
-         * Student student0 = new Student(); Student student1 = new Student(11025564,
-         * 12, 0.34, "Kali Stevens");
          * 
-         * System.out.println("Well Hello there!"); threeLine();
-         * System.out.println("General Kenobi."); calcGPA();
+         * 
+         * assignLunchMultiple(10, 1.45); assignLunchMultiple(11, 2.5);
          */
 
-        assignLunchMultiple(10, 1.45);
-        assignLunchMultiple(11, 2.5);
+        mathPractice();
+
     }
 }
