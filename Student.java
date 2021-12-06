@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 1, Classes and Objects, Germari Cull, 12/6/21, v0.10
+// Unit 2, Topic 1, Classes and Objects, Germari Cull, 12/6/21, v0.11
 
 public class Student {
     // THESE ARE INSTANCE VARIABLES
@@ -158,6 +158,8 @@ public class Student {
         double fakeGPA;
         fakeGPA = (grade0 + grade1 + grade2) / 3;
 
+        return fakeGPA;
+
     }
 
     public static void main(String[] args) {
@@ -167,7 +169,15 @@ public class Student {
          * assignLunchMultiple(10, 1.45); assignLunchMultiple(11, 2.5);
          */
 
-        mathPractice();
+        // mathPractice();
+
+        double realGPA;
+
+        realGPA = getGPA();
+        realGPA = -1.0;
+        System.out.println(realGPA);
+        realGPA = getGPA();
+        System.out.println(realGPA);
 
     }
 }
